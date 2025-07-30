@@ -1,70 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Travel Photo Collection</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #f0f0f0;
-      color: #333;
-    }
-    header {
-      background-color: #2c3e50;
-      padding: 20px;
-      text-align: center;
-      color: white;
-    }
-    h1 {
-      margin: 0;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 15px;
-      padding: 20px;
-    }
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      transition: transform 0.3s ease;
-    }
-    .gallery img:hover {
-      transform: scale(1.03);
-    }
-    footer {
-      background-color: #34495e;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing in the USA</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1.5em 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 1px;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 0.8em 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ecf0f1;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        section {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        section:last-of-type {
+            border-bottom: none;
+        }
+        h2 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .image-container {
+            text-align: center;
+            margin: 25px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .caption {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background-color: #2c3e50;
+            color: white;
+            border-radius: 0 0 8px 8px;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Housing in the USA</h1>
+        <p>A look into the diverse world of American homes</p>
+    </header>
 
-  <header>
-    <h1>Travel Photo Collection</h1>
-    <p>Explore beautiful places around the world</p>
-  </header>
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#types">Types of Housing</a>
+        <a href="#market">Housing Market</a>
+        <a href="#trends">Current Trends</a>
+    </nav>
 
-  <main class="gallery">
-    <img src="https://source.unsplash.com/featured/?beach" alt="Beach">
-    <img src="https://source.unsplash.com/featured/?mountains" alt="Mountains">
-    <img src="https://source.unsplash.com/featured/?city" alt="City">
-    <img src="https://source.unsplash.com/featured/?forest" alt="Forest">
-    <img src="https://source.unsplash.com/featured/?desert" alt="Desert">
-    <img src="https://source.unsplash.com/featured/?island" alt="Island">
-    <img src="https://source.unsplash.com/featured/?waterfall" alt="Waterfall">
-    <img src="https://source.unsplash.com/featured/?sunset" alt="Sunset">
-  </main>
+    <div class="container">
+        <section id="overview">
+            <h2>Overview of US Housing</h2>
+            <p>The housing landscape in the United States is incredibly diverse, reflecting the country's vast geography, varied climates, and distinct cultural influences. From bustling city apartments to sprawling suburban homes and tranquil rural properties, American housing caters to a wide range of lifestyles and economic situations.</p>
+            <p>Homeownership has long been a significant part of the American Dream, symbolizing stability and personal achievement. However, renting also plays a crucial role, especially in urban centers and for younger populations or those seeking flexibility.</p>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/800x450?text=Suburban+Homes" alt="Typical suburban homes in the USA">
+                <p class="caption">A common scene of suburban homes in the United States.</p>
+            </div>
+        </section>
 
-  <footer>
-    <p>&copy; 2025 Travel Photo Collection. All rights reserved.</p>
-  </footer>
+        <section id="types">
+            <h2>Common Types of Housing</h2>
+            <p>Different regions and communities in the US offer various housing styles and structures:</p>
+            <ul>
+                <li><strong>Single-Family Homes:</strong> These are detached houses, often with a yard, and are the most common type of housing, especially in suburban and rural areas. They offer privacy and space.</li>
+                <li><strong>Apartments/Condominiums:</strong> Found predominantly in urban areas, these are units within larger buildings. Apartments are typically rented, while condominiums are individually owned.</li>
+                <li><strong>Townhouses/Row Houses:</strong> These are multi-story homes that share one or more walls with adjacent houses, often found in denser urban or suburban settings. They offer a balance between a single-family home and an apartment.</li>
+                <li><strong>Mobile Homes/Manufactured Homes:</strong> Factory-built homes that can be transported to a site. They offer a more affordable housing option, often located in dedicated parks.</li>
+                <li><strong>Multi-Family Homes:</strong> Duplexes, triplexes, or quads where a single building contains multiple living units, often owned by one landlord and rented out.</li>
+            </ul>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/800x450?text=NYC+Apartments" alt="Apartment buildings in a major US city">
+                <p class="caption">High-rise apartment buildings dominate the skyline of many US cities.</p>
+            </div>
+        </section>
 
+        <section id="market">
+            <h2>The US Housing Market</h2>
+            <p>The US housing market is dynamic and influenced by numerous factors, including interest rates, economic growth, population shifts, and local supply and demand. Historically, real estate has been a significant investment for many Americans.</p>
+            <p>Home prices vary dramatically across the country. Major metropolitan areas like New York City, San Francisco, and Los Angeles often have some of the highest housing costs, while many states in the Midwest and South offer more affordable options. Rental costs also follow similar patterns.</p>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/800x450?text=For+Sale+Sign" alt="Real estate 'For Sale' sign in front of a house">
+                <p class="caption">A "For Sale" sign, a common sight reflecting activity in the housing market.</p>
+            </div>
+        </section>
+
+        <section id="trends">
+            <h2>Current Housing Trends</h2>
+            <p>Several trends are shaping the US housing market today:</p>
+            <ul>
+                <li><strong>Affordability Challenges:</strong> Rising home prices and interest rates have made homeownership less accessible for many, particularly first-time buyers.</li>
+                <li><strong>Remote Work Impact:</strong> The rise of remote work has allowed some individuals to move away from expensive urban centers to more affordable or spacious areas, sometimes leading to housing booms in smaller towns.</li>
+                <li><strong>Sustainable Housing:</strong> Growing interest in eco-friendly homes, energy efficiency, and sustainable building materials is a notable trend.</li>
+                <li><strong>Demographic Shifts:</strong> Millennial and Gen Z buyers are entering the market, influencing demand for different types of housing and locations.</li>
+                <li><strong>Rental Market Growth:</strong> With homeownership becoming more challenging, the rental market remains strong, and new apartment complexes continue to be developed.</li>
+            </ul>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/800x450?text=Modern+Eco+Home" alt="Modern eco-friendly home with solar panels">
+                <p class="caption">An example of a modern, energy-efficient home reflecting current trends.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Housing in the USA. All rights reserved.</p>
+    </footer>
 </body>
 </html>
